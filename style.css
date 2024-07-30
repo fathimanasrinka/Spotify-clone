@@ -1,0 +1,304 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider-bar{
+  background: rgb(12, 11, 11);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 322px;
+  position: fixed;
+  padding: 10px;
+}
+.slide-nav{
+  background: rgb(28, 28, 28);
+  border-radius: 12px;
+  padding: 20px 10px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  
+}
+.slide-nav .slide-logo{
+  width: 120px;
+  margin-left: 10px;
+}
+.slide-nav .slide-logo img{
+  width: 100px;
+}
+.slide-nav ul li{
+padding: 10px 20px;
+
+}
+.slide-nav ul li a{
+  text-decoration: none;
+  color: rgb(220, 217, 217);
+  font-size: 16px;
+  font-weight: 600;
+  
+  }
+  .slide-nav ul li a i{
+      margin-right: 10px;
+      font-size: 20px;
+      
+      }
+      .library::after{
+          content: '+';
+          float: right;
+          text-align: center;
+          padding: 5px;
+          border-radius: 50%;
+          font-size: 15px;
+      }
+      .create-playlist{
+      background: rgb(31, 30, 30);
+      padding: 30px 15px;
+      border-radius: 10px;
+      margin-bottom: 10px; 
+      }
+      .side-scroll{
+          height: 120px;
+          overflow-y: auto;
+      }
+      .side-scroll::-webkit-scrollbar{
+        background-color: transparent;
+        width: 10px;
+      }
+      .side-scroll:hover::-webkit-scrollbar-thumb{
+        background-color: #434242;
+        width: 5px;
+      }
+      .create-playlist h4{
+          color: white;
+          font-size: 15px;
+      }
+      .create-playlist p{
+          color: white;
+          font-size: 13px;
+          margin: 10px 0px;
+      }
+      .create-playlist button{
+          padding: 8px 20px;
+          border-radius: 20px;
+          border: 0;
+          outline: 0;
+          font-weight: 600;
+          margin-bottom: 10px;
+      }
+    .privacy ul li a{
+      text-decoration: none;
+      color: #575656;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .privacy ul li{
+      padding: 0 12px;
+      padding-bottom: 8px;
+    }
+    .privacy ul{
+      list-style: none;
+      margin-top: 20px;
+    }
+    .privacy ul li a:hover{
+      text-decoration: underline;
+      color: aliceblue;
+    }
+    .eng-butt{
+      padding: 20px 70px;
+    }
+    .eng-butt button{
+      padding: 10px 20px;
+      background: transparent;
+      color: aliceblue;
+      font-size: 15px;
+      border: 0;
+      outline: none;
+      border-radius: 20px;
+      border: 1px solid #818080;
+    }
+    .eng-butt button:hover{
+      color: aliceblue;
+      padding: 11px 31px;
+      border: 1px solid#fff;
+    }
+    .main-section{
+      margin-left: 300px;
+      background: #181818;
+      height: 100vh;
+      overflow: auto;
+    }
+    .main-section .top-section{
+      padding: 20px 30px;
+      background: rgb(7, 7, 7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .main-section .top-section .prev-butn button i{
+      font-size: 22px;
+      color: white;
+      margin-right: 10px;
+    }
+    .main-section .top-section .prev-butn button {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      
+    }
+     .top-section .login-butn .sign-up{
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 25px;
+      border: transparent;
+      background: transparent;
+
+    }
+    .top-section .login-butn .sign-up:hover{
+      color: #c6bdbd;
+
+    }
+    .top-section .login-butn .login-in{
+      color: rgb(15, 14, 14);
+      font-size: 15px;
+      font-weight: 600;
+      background: #ffffff;
+      padding: 10px 15px;
+      border-radius: 20px;
+
+    }
+    .top-section .login-butn .login-in:hover{
+      background: #818080;
+
+    }
+
+    .spotify-playlist{
+      padding: 20px 31px;
+    }
+    .spotify-playlist h2{
+      color: #fff;
+      font-size: 25px;
+      margin-bottom: 20px;
+
+    }
+    .spotify-playlist .card{
+      display: flex;
+      gap: 10px;
+      overflow: hidden;
+    }
+    .spotify-playlist .card .item{
+      width: 260px;
+      min-width: 166px;
+      cursor: pointer;
+      background-color: #2d2d2d;
+      padding: 15px;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+    .spotify-playlist .card .item:hover{
+     background-color: #282828; 
+    }
+    .spotify-playlist .card .item img{
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      
+    }
+    .spotify-playlist .card .item h4{
+      color: #fff;
+      font-size: 18px;
+    }
+    .spotify-playlist .card .item p{
+      color: #7e7b7b;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .spotify-playlist .card .item p:hover{
+      text-decoration: underline;
+      color: #ffffff;
+    }
+    .spotify-playlist .ply-butn{
+      position: relative;
+    }
+    .spotify-playlist .ply-butn i{
+      position: absolute;
+      background-color: green;
+      border-radius: 100%;
+      padding: 10px;
+      right:10px ;
+      top: -60px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .spotify-playlist .card .item:hover .ply-butn i{
+     opacity: 1;       
+      transform: translateY(-20px);
+    }
+    .footer-section{
+      padding: 20px 40px;
+
+    }
+
+    .footer-section .footer{
+      justify-content: space-between;
+      margin-top: 20px;
+      display: flex;
+    }
+    .footer-section .footer .footer-link{
+      justify-content: space-between;
+     gap: 50px;
+      display: flex;
+    }
+    .footer-section .footer .footer-link .footer-column{
+      margin: 0px 12px;
+    }
+    .footer-section .footer .footer-link div{
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .footer-section .footer .footer-link ul{
+      list-style: none;
+      margin:  6px 0px;
+    }
+    .footer-section .footer .footer-link ul li a{
+      text-decoration: none;
+      color: #4e4c4c;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .footer-section .footer .footer-link ul li a:hover{
+      text-decoration: underline;
+      color:white;
+      
+    }
+    .footer .social-icon i{
+      color: #fff;
+      background-color: #7e7b7b;
+      padding: 12px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    .footer .social-icon i:hover{
+      color: #575656;
+    }
+    hr{
+      margin: 20px 40px;
+      background: #818080;
+      border: 0;
+      outline: 0;
+      border: 1px solid #434242;
+    }
+    .coopy-right{
+      padding: 0 20px;
+      color: #7e7b7b;
+    }
